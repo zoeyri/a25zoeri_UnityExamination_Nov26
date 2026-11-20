@@ -2216,6 +2216,7 @@ GameObject:
   - component: {fileID: 777008757}
   - component: {fileID: 777008756}
   - component: {fileID: 777008755}
+  - component: {fileID: 777008758}
   m_Layer: 0
   m_Name: PlatformTiles
   m_TagString: Untagged
@@ -2269,7 +2270,7 @@ TilemapCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
@@ -2531,6 +2532,36 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -3, y: 2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -2, y: 2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -1, y: 2, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 3
@@ -2553,6 +2584,12 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 2d9c36a775f2e2f43a761fb223594713, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: eaec2403a2a54ae4bb625acbdb8dd7b9, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 1c9a66e012210a141990d588582b1a44, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: f6ddd910f17d8544f8bad87a446d1f52, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 05f47d2832832f444bad280d9b45c71d, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 3
     m_Data: {fileID: 1305324191, guid: 104167362e1245b44bd46725db29ae95, type: 3}
@@ -2574,8 +2611,14 @@ Tilemap:
     m_Data: {fileID: 135505930, guid: 104167362e1245b44bd46725db29ae95, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1104450964, guid: 104167362e1245b44bd46725db29ae95, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -5773244093850934461, guid: 104167362e1245b44bd46725db29ae95, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -7397652778513525935, guid: 104167362e1245b44bd46725db29ae95, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -4657764202658221571, guid: 104167362e1245b44bd46725db29ae95, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 19
+  - m_RefCount: 22
     m_Data:
       e00: 1
       e01: 0
@@ -2594,13 +2637,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 19
+  - m_RefCount: 22
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -8, y: -5, z: 0}
-  m_Size: {x: 15, y: 5, z: 1}
+  m_Size: {x: 15, y: 8, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -2620,6 +2663,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!251 &777008758
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777008753}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1358227954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,7 +3141,7 @@ Transform:
   m_GameObject: {fileID: 2127072065}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16, y: 0.93, z: 0}
+  m_LocalPosition: {x: -4.67, y: 0.64, z: 0}
   m_LocalScale: {x: 1.55, y: 1.55, z: 1.55}
   m_ConstrainProportionsScale: 1
   m_Children:
